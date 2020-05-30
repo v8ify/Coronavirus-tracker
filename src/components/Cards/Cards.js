@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent, Grid, Typography } from "@material-ui/core";
+import CircularProgress from "@material-ui/core/CircularProgress";
 import Countup from "react-countup";
 import styles from "./Cards.module.css";
 import cx from "classnames";
@@ -8,7 +9,11 @@ class Cards extends React.Component {
   render() {
     const { confirmed, recovered, deaths, lastUpdate } = this.props.data;
     if (!confirmed) {
-      return <p>Loading...</p>;
+      return (
+        <div className={styles.progressbar}>
+          <CircularProgress />
+        </div>
+      );
     }
 
     return (

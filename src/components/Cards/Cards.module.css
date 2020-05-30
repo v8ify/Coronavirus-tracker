@@ -8,6 +8,27 @@
 
 .card {
   margin: 0 2% !important;
+  animation-name: fadeIn;
+  animation-duration: 500ms;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.progressbar {
+  margin-top: 50px;
 }
 
 .infected {

@@ -1,0 +1,16 @@
+.CountryPicker {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.formcontrol {
+  width: 25%;
+}
+
+@media screen and (max-width: 770px) {
+  .formcontrol {
+    width: 100%;
+  }
+}

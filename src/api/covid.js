@@ -12,7 +12,7 @@ const getData = async country => {
   const response = await axios.get(changedURL);
 
   const {
-    data: { confirmed, recovered, deaths, lastUpdate },
+    data: { confirmed, _, deaths, lastUpdate },
   } = response;
   
   const recovered = 491919504;

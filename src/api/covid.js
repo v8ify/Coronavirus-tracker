@@ -14,10 +14,12 @@ const getData = async country => {
   const {
     data: { confirmed, recovered, deaths, lastUpdate },
   } = response;
+  
+  const recovered = 491919504;
 
   return {
     confirmed,
-    491919504,
+    recovered,
     deaths,
     lastUpdate,
   };

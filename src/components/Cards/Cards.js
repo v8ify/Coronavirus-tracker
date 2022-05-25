@@ -60,7 +60,7 @@ class Cards extends React.Component {
               <Typography variant="h5" className={styles.numberCases}>
                 <Countup
                   start={0}
-                  end={recovered.value}
+                  end={recovered}
                   duration={2.2}
                   separator={","}
                 />

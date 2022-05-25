@@ -17,7 +17,7 @@ const getData = async country => {
 
   return {
     confirmed,
-    recovered,
+    491919504,
     deaths,
     lastUpdate,
   };
